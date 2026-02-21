@@ -318,9 +318,10 @@ body{
 .exp-bullets{list-style:none;}
 .exp-bullets li{
   font-size:13px;color:var(--dark);line-height:1.65;
-  padding:3px 0;display:flex;gap:8px;
+  padding:3px 0;display:flex;gap:8px;align-items:baseline;
 }
-.exp-bullets li::before{content:'→';color:var(--rust);flex-shrink:0;}
+.exp-bullets li::before{content:'→';color:var(--rust);flex-shrink:0;margin-top:1px;}
+.exp-bullets li > *{display:inline;}
 .exp-impact{
   display:inline-block;
   background:var(--rust);color:white;
@@ -706,9 +707,6 @@ body{
         <a class="social-btn" href="mailto:deepanakash@email.com">
           <span class="sb-icon sb-em">✉</span>Email Me
         </a>
-        <a class="social-btn" href="Deepan_Akash_Resume.pdf" download style="background:var(--rust)">
-          <span class="sb-icon" style="background:rgba(255,255,255,.2)">⬇</span>Resume.pdf
-        </a>
       </div>
     </div>
   </div>
@@ -757,7 +755,7 @@ body{
             <div class="exp-date-badge">Jul – Sept 2025</div>
           </div>
           <ul class="exp-bullets">
-            <li>Led development of <strong>Neurovault</strong> — a privacy-first AI memory system converting voice notes, PDFs, and text into a searchable knowledge graph</li>
+            <li>Led development of <strong>Neurovault</strong> — a privacy-first AI memory system converting voice, PDFs, and text into a searchable knowledge graph</li>
             <li>Modular AI pipelines using OpenAI Whisper, SentenceTransformers, and Neo4j for semantic retrieval</li>
             <li>Serverless AWS stack reducing infrastructure overhead and improving scalability by <span class="exp-impact">40%</span></li>
             <li>Emotion-aware capture UI with React.js and Tailwind CSS; dashboards via Plotly Dash and Streamlit</li>
@@ -1148,9 +1146,6 @@ body{
           </a>
           <a class="social-btn" href="https://github.com" target="_blank">
             <span class="sb-icon sb-gh">⌥</span>GitHub
-          </a>
-          <a class="social-btn" href="Deepan_Akash_Resume.pdf" download style="background:var(--rust)">
-            <span class="sb-icon" style="background:rgba(255,255,255,.2)">⬇</span>Download Resume
           </a>
         </div>
       </div>
